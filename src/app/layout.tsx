@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { type Metadata } from "next";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
+
 import GlobalContext from "@/contexts/global";
 import { initColorTheme } from "@/utils/color-theme";
 import { ColorTheme, Lang, ResumePreviewMode } from "@/enums";

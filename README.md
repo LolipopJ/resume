@@ -55,8 +55,6 @@ experience:
   description: What do you do here?
 ```
 
-替换简历照片文件 `/public/photos/selfie.jpg`。
-
 ### 导出简历
 
 使用如下命令导出简历为 PDF 和 JPEG 格式的文件，可以在 `/exports` 目录下找到导出的结果：

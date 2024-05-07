@@ -1,6 +1,7 @@
 {
   "name": "best-resume-ever-creative-react",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "author": {
     "name": "LolipopJ",

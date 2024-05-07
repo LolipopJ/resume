@@ -2,12 +2,13 @@
 
 import { useState, useMemo, useContext, type ReactNode, type Key } from "react";
 import classNames from "classnames";
+
 import GlobalContext from "@/contexts/global";
 import { getLangCommon } from "@/langs";
+import { ResumePreviewMode } from "@/enums";
 import { getResumeDetails } from "@/utils/resume";
 
 import "@/styles/index.scss";
-import { ResumePreviewMode } from "@/enums";
 
 export default function Resume() {
   const globalContext = useContext(GlobalContext);
@@ -96,7 +97,7 @@ export default function Resume() {
         <div className="flex flex-col sm:flex-row lg:flex-col">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/photos/selfie.jpg"
+            src={resume.selfie}
             alt="selfie"
             className="w-full max-w-60 sm:max-w-64 lg:max-w-56 rounded-lg lg:rounded-t-none self-center sm:self-start sm:mr-4 lg:mr-0 lg:-mt-8"
           />
