@@ -1,25 +1,31 @@
 const puppeteer = require("puppeteer");
-const http = require("http");
+const { request } = require("http");
 const path = require("path");
-const fs = require("fs");
-
-const config = require("../config");
-const port = config.DEV_PORT || 8088;
-
-// Note: SCREENSHOT_WIDTH and SCREENSHOT_HEIGHT will be used as browser viewport.
-const defaultScreenshotWidth = config.EXPORT_SCREENSHOT_WIDTH || 1600;
-const defaultScreenshotHeight = config.EXPORT_SCREENSHOT_HEIGHT || 1000;
-const defaultPdfWidth = config.EXPORT_PDF_WIDTH || 1600;
-const defaultPdfHeight = config.EXPORT_PDF_HEIGHT || 1000;
-
+const { existsSync, mkdirSync } = require("fs");
 const { interval, lastValueFrom } = require("rxjs");
 const { filter, first, mergeMap } = require("rxjs/operators");
+
+const CONFIG = require("../configs/export-config.json");
+const {
+  DEV_PORT,
+  EXPORT_SCREENSHOT_WIDTH,
+  EXPORT_SCREENSHOT_HEIGHT,
+  EXPORT_PDF_WIDTH,
+  EXPORT_PDF_HEIGHT,
+} = CONFIG;
+
+const PORT = DEV_PORT || 3000;
+
+const DEFAULT_SCREENSHOT_WIDTH = EXPORT_SCREENSHOT_WIDTH || 1600;
+const DEFAULT_SCREENSHOT_HEIGHT = EXPORT_SCREENSHOT_HEIGHT || 1000;
+const DEFAULT_PDF_WIDTH = EXPORT_PDF_WIDTH || 1600;
+const DEFAULT_PDF_HEIGHT = EXPORT_PDF_HEIGHT || 1000;
 
 const fetchServeResponse = () => {
   return new Promise((res, rej) => {
     try {
-      const req = http.request(`http://localhost:${port}/`, (response) =>
-        res(response.statusCode)
+      const req = request(`http://localhost:${PORT}/`, (response) =>
+        res(response.statusCode),
       );
       req.on("error", (err) => rej(err));
       req.end();
@@ -42,40 +48,40 @@ const waitForServerReady = () => {
         return false;
       }
     }),
-    filter((ok) => !!ok)
+    filter((ok) => !!ok),
   );
 };
 
-const convert = async function () {
+const exportResumes = async function () {
   await lastValueFrom(waitForServerReady().pipe(first()));
 
   console.log("Connected to server ...");
   console.log("Exporting ...");
 
   try {
-    const savePath = path.join(__dirname, "../export/");
+    const savePath = path.join(__dirname, "../exports/");
 
-    if (!fs.existsSync(savePath)) {
-      fs.mkdirSync(savePath);
+    if (!existsSync(savePath)) {
+      mkdirSync(savePath);
     }
 
     const exportResume = async function ({
-      code = "cn",
+      code = "zh",
       screenshotFullPage = true,
       screenshotQuality = 100,
       autoFitPdf = true,
     }) {
       const filename = `resume-${code}`;
       const codeUpperCase = code.toUpperCase();
-      const url = `http://localhost:${port}/#/${code}?exportMode=true`;
+      const url = `http://localhost:${PORT}/?lang=${code}&theme=light&mode=export`;
       console.log(`Export resume: ${url} ...`);
 
       const screenshotWidth =
-        config[`EXPORT_SCREENSHOT_WIDTH_${codeUpperCase}`] ||
-        defaultScreenshotWidth;
+        CONFIG[`EXPORT_SCREENSHOT_WIDTH_${codeUpperCase}`] ||
+        DEFAULT_SCREENSHOT_WIDTH;
       const screenshotHeight =
-        config[`EXPORT_SCREENSHOT_HEIGHT_${codeUpperCase}`] ||
-        defaultScreenshotHeight;
+        CONFIG[`EXPORT_SCREENSHOT_HEIGHT_${codeUpperCase}`] ||
+        DEFAULT_SCREENSHOT_HEIGHT;
 
       const browser = await puppeteer.launch({
         args: ["--no-sandbox"],
@@ -98,7 +104,7 @@ const convert = async function () {
       });
 
       const pdfWidth =
-        config[`EXPORT_PDF_WIDTH_${codeUpperCase}`] || defaultPdfWidth;
+        CONFIG[`EXPORT_PDF_WIDTH_${codeUpperCase}`] || DEFAULT_PDF_WIDTH;
       const pdfHeight = autoFitPdf
         ? await page.evaluate(() => {
             const body = document.body,
@@ -109,15 +115,15 @@ const convert = async function () {
               body.offsetHeight,
               html.clientHeight,
               html.scrollHeight,
-              html.offsetHeight
+              html.offsetHeight,
             );
 
             return pageHeight + 10;
           })
-        : config[`EXPORT_PDF_HEIGHT_${codeUpperCase}`] || defaultPdfHeight;
+        : CONFIG[`EXPORT_PDF_HEIGHT_${codeUpperCase}`] || DEFAULT_PDF_HEIGHT;
 
       console.log(
-        `Resume screenshot is exported to: ${savePath}${filename}.jpeg`
+        `Resume screenshot is exported to: ${savePath}${filename}.jpeg`,
       );
 
       await page.pdf({
@@ -132,7 +138,7 @@ const convert = async function () {
     };
 
     await exportResume({
-      code: "cn",
+      code: "zh",
     });
 
     await exportResume({
@@ -146,4 +152,4 @@ const convert = async function () {
   console.log("Finished exports.");
 };
 
-convert();
+exportResumes();

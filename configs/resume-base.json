@@ -1,0 +1,127 @@
+{
+  "contact": {
+    "email": "lolipop0703@qq.com",
+    "phone": "+86 18980344225",
+    "website": "https://lolipopj.github.io",
+    "github": "LolipopJ"
+  },
+  "experience": [
+    {
+      "website": "https://www.alibabagroup.com",
+      "timeperiod": "2022.07 — 2023.12",
+      "internship": false
+    },
+    {
+      "timeperiod": "2022.02 — 2022.04",
+      "website": "https://www.alibabagroup.com",
+      "internship": true
+    },
+    {
+      "timeperiod": "2021.01 — 2021.07",
+      "website": "https://www.huawei.com",
+      "internship": true
+    }
+  ],
+  "education": [
+    {
+      "timeperiod": "2018.09 — 2022.06",
+      "website": "https://www.uestc.edu.cn"
+    }
+  ],
+  "projects": [
+    {
+      "name": "yunqiao-platform",
+      "platform": "React",
+      "url": "https://gts.work/portal/yunqiao"
+    },
+    {
+      "name": "startrails-dag-editor",
+      "platform": "React"
+    },
+    {
+      "name": "damo-official",
+      "platform": "React",
+      "url": "https://damo.alibaba.com"
+    },
+    {
+      "name": "netunion-dnrs-web",
+      "platform": "Vue",
+      "url": "https://github.com/uestclug/netunion-dnrs-web"
+    },
+    {
+      "name": "lug-official",
+      "platform": "Vue",
+      "url": "https://github.com/uestclug/lug-official"
+    },
+    { "name": "home-action-client", "platform": "Vue", "hidden": true },
+    {
+      "name": "wxapp-ivory-tower-timetable",
+      "platform": "WXML",
+      "url": "https://github.com/UESTC-cantdoit/wxapp-ivory-tower-timetable",
+      "hidden": true
+    }
+  ],
+  "contributions": [
+    {
+      "name": "mdimg",
+      "url": "https://github.com/LolipopJ/mdimg",
+      "platform": "TypeScript"
+    },
+    {
+      "name": "hexo-theme-archer",
+      "url": "https://github.com/fi3ework/hexo-theme-archer",
+      "platform": "EJS"
+    },
+    {
+      "name": "design-patterns-for-humans-zh",
+      "url": "https://github.com/LolipopJ/design-patterns-for-humans-zh"
+    },
+    {
+      "name": "SOSCONF2020",
+      "url": "https://gitlab.com/uestclug/sosconf_zh.gitlab.io",
+      "platform": "Vue"
+    }
+  ],
+  "awards": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lolipopj/resume/public/awards/2022阿里巴巴ACP认证.png"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lolipopj/resume/public/awards/2021网络技术挑战赛.jpg"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lolipopj/resume/public/awards/2021中国大学生服务外包创新创业大赛.jpg"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lolipopj/resume/public/awards/2020微信小程序应用开发赛.png"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lolipopj/resume/public/awards/2019社会实践优秀个人.jpg"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "level": 85,
+      "iconClass": "fa-brands fa-react",
+      "url": "https://reactjs.org"
+    },
+    {
+      "name": "TypeScript",
+      "level": 75,
+      "url": "https://www.typescriptlang.org"
+    },
+    {
+      "name": "Vue",
+      "level": 70,
+      "iconClass": "fa-brands fa-vuejs",
+      "url": "https://vuejs.org"
+    },
+    {
+      "name": "Node",
+      "level": 60,
+      "iconClass": "fa-brands fa-node-js",
+      "url": "https://nodejs.org"
+    }
+  ]
+}

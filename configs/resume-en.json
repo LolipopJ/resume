@@ -1,0 +1,111 @@
+{
+  "name": {
+    "first": "Jingshen",
+    "last": "Song"
+  },
+  "about": "Aim to become a Front-end Architect",
+  "career": "During career at Alibaba, served as a front-end development/delivery engineer, participating in the construction of internal performance platforms internally, providing front-end solutions for delivery projects externally, and writing code to achieve service fulfillment.",
+  "schoolwork": "During university, served as the project team leader and participated in the design and front-end development of multiple projects, Learned good overall planning, cooperation and communication skills. Passed CET-4 and CET-6. Received school-level scholarships in all academic years.",
+  "contact": {
+    "region": "China",
+    "province": "Sichuan",
+    "city": "Chengdu"
+  },
+  "education": [
+    {
+      "school": "University of Electronic Science and Technology",
+      "degree": "Bachelor of Engineering",
+      "major": "Software Engineering (Internet Plus)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Alibaba",
+      "position": "Front-end Development / Delivery Engineer",
+      "description": "Alibaba Cloud - System Engineering Technology. Undertake the research and development of Yunqiao platform internally, and participate in the delivery performance of projects such as China Nuclear Power Unified R&D Platform and Guiyang Airport Qianyunyigou"
+    },
+    {
+      "company": "Alibaba",
+      "position": "Front-end Development Engineer",
+      "description": "Alibaba Cloud - Global Technical Service. Undertake the research and development of GTS workbench"
+    },
+    {
+      "company": "Huawei",
+      "position": "Cloud Computing Development Engineer",
+      "description": "Storage Business Infrastructure - Container Platform. Responsible for refactoring and developing CDBI, building and deploying multiple independent verification environments, writing scripts, and writing several blogs; awarded as Star of Huawei Storage (top 20%)"
+    }
+  ],
+  "projects": [
+    {
+      "shortIntro": "Yunqiao Industrial Digital Component Center",
+      "description": "As the front-end owner, responsible for the development and maintenance of Yunqiao Workshop and Yunqiao Asset Market, and participate in the baseline development and customized development of commercial versions. Improve the experience and optimize the performance of the Domain-Driven Design diagram editor in the platform. Front-end"
+    },
+    {
+      "shortIntro": "Lightweight task scheduling tool",
+      "description": "Implemented based on AntV X6, which arranges server-side task execution logic in a drag-and-drop manner. Supports the use of multiple running logics such as serial and parallel, supports the configuration of different task nodes such as Shell and Python, and supports legality check and automatic arrangement of nodes. Front-end"
+    },
+    {
+      "shortIntro": "Alibaba Damo Academy official website",
+      "description": "Participate in the official website upgrade project of Alibaba Damo Academy and Yunqiao, responsible for the transformation and development of the login registration module and personal account management module. Front-end"
+    },
+    {
+      "shortIntro": "Online repair system for dormitory network of UESTC",
+      "description": "Internet users can submit repair orders online and track the progress of them. Solvers can accept orders, add processing information, and view order operation logs. Full stack"
+    },
+    {
+      "shortIntro": "Official website for LUG, UESTC",
+      "description": "Use Markdown to write news and blogs, provide navigation links to various services, and better show the elegant demeanor of the LUG team. The design refers to the official website of Tsinghua University TUNA Association. Full stack"
+    },
+    {
+      "shortIntro": "Client for Home Action",
+      "description": "A client designed for the families of lost elderly people and volunteers looking for the lost. Use Lark for information synchronization and intelligence aggregation. Front-end"
+    },
+    {
+      "shortIntro": "「Ivory Tower Timetable」",
+      "description": "A WeChat Mini Program for Collaborative To-Do Affairs for College Students Driven by the Curriculum. Join the class, share the schedule, to-do affairs and public affairs with your classmates. Front-end"
+    }
+  ],
+  "contributions": [
+    {
+      "shortIntro": "Convert Markdown to image",
+      "description": "Allows custom templates to convert input Markdown or HTML documents into images that suit your needs"
+    },
+    {
+      "shortIntro": "A modern Hexo blog theme",
+      "description": "Develop new features (such as dark mode), improve mobile adaptation, fix known issues -- help the theme become better"
+    },
+    {
+      "shortIntro": "「Design Pattern Tutorial for Chinese Readers」",
+      "description": "The Chinese translation version of the open source tutorial design-patterns-for-humans, for reference in learning design patterns"
+    },
+    {
+      "shortIntro": "Official website for 2020 Students Open Source Conference of Chinese",
+      "description": "Front-end design of 「About Us」 and 「Sub-venue」 pages"
+    }
+  ],
+  "awards": [
+    {
+      "name": "Alibaba Cloud Certified Professional - Cloud Computing"
+    },
+    {
+      "name": "2021 中国高校计算机大赛网络技术挑战赛",
+      "award": "First Prize in Southwest Division",
+      "grade": "Provincial level"
+    },
+    {
+      "name": "2021 中国大学生服务外包创新创业大赛",
+      "award": "Third Prize of Western Regional Competition",
+      "grade": "Provincial level"
+    },
+    {
+      "name": "2020 中国高校计算机大赛微信小程序应用开发赛",
+      "award": "Third Prize in Southwest Division",
+      "grade": "Provincial level"
+    },
+    {
+      "name": "2019 Outstanding Individuals in Social Practice",
+      "grade": "School level"
+    }
+  ],
+  "lang": "en"
+}

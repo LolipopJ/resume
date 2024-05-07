@@ -1,0 +1,77 @@
+.contact-item,
+.action-item {
+  > svg {
+    @apply mr-2 w-4;
+  }
+}
+
+.action-item {
+  @apply cursor-pointer select-none;
+}
+
+.resume-section {
+  @apply mb-8;
+
+  &__title {
+    @apply text-primary dark:text-primary-light text-xl font-bold;
+
+    > svg {
+      @apply mr-3 w-6;
+    }
+  }
+
+  &-item {
+    @apply flex flex-col gap-1 mt-3 pl-9 cursor-default break-inside-avoid;
+
+    &--clickable {
+      @apply cursor-pointer;
+    }
+
+    &--hidden {
+      @apply hidden;
+    }
+
+    &__title {
+      @apply flex flex-row items-center text-lg font-bold;
+
+      &-badge {
+        @apply ml-1.5 px-1.5 py-1 text-xs rounded-md bg-zinc-200 text-zinc-900;
+
+        &--primary {
+          @apply bg-primary text-white;
+        }
+      }
+    }
+
+    &__subtitle {
+    }
+
+    &__duration {
+      @apply text-sm;
+    }
+
+    &__desc {
+      @apply font-light;
+    }
+
+    &__extra {
+      @apply text-sm text-zinc-600 dark:text-zinc-400 font-light;
+    }
+  }
+
+  &-badge {
+    @apply bg-primary text-white border-primary border-2 transition-colors flex flex-row items-center px-3 py-1.5 mr-3 mb-1.5 rounded-lg;
+
+    &:hover {
+      @apply bg-transparent border-primary dark:border-primary-light text-primary dark:text-primary-light;
+    }
+
+    &-container {
+      @apply flex flex-row flex-wrap mt-3 pl-9;
+    }
+
+    > svg {
+      @apply mr-1 w-4;
+    }
+  }
+}

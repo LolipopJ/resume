@@ -1,21 +1,39 @@
-# resume
+# best-resume-ever-creative-react
 
-Based on brilliant project [best resume ever](https://github.com/salomonelli/best-resume-ever).
+## 我的简历
 
-## 如何使用
+基于这个很棒的开源项目：[best resume ever](https://github.com/salomonelli/best-resume-ever)。
 
-Fork 或 Clone 本仓库，安装依赖：
+基于 React 重新实现项目中我偏好的 Creative 模板。
+
+## 你的简历
+
+### 安装依赖
+
+确保 Node 不低于 18.17 版本。
+
+克隆本仓库到本地，安装依赖：
 
 ```bash
 yarn
 ```
 
-修改 `src/resume` 中的信息为您的简历信息。
+### 预览简历
 
-其中：`data-default.yml` 存放公有信息，在使用 `data-cn.yml` 或 `data-en.yml` 生成不同语言的简历页面时，将自动合并其中的内容。例如：
+使用如下命令在本机即时预览生成简历的结果：
+
+```bash
+yarn serve
+```
+
+### 修改简历信息
+
+修改 `/configs` 中的简历信息。
+
+其中 `resume-base.yml` 存放公用信息，在使用 `resume-zh.yml` 或 `resume-en.yml` 生成不同语言的简历页面时，自动合并为完整的内容。例如：
 
 ```yml
-# data-default.yml
+# resume-base.yml
 experience:
 - timeperiod: 2022.02 - 2022.04
   website: https://www.company-homepage.com
@@ -37,20 +55,22 @@ experience:
   description: What do you do here?
 ```
 
-使用如下命令在本机即时预览生成简历的结果：
+替换简历照片文件 `/public/photos/selfie.jpg`。
 
-``` bash
-yarn serve
-```
+### 导出简历
 
-使用如下命令在 `export` 目录下导出您的简历为 PDF 和 JPEG 格式的文件。
+使用如下命令导出简历为 PDF 和 JPEG 格式的文件，可以在 `/exports` 目录下找到导出的结果：
 
-``` bash
+```bash
 yarn export
 ```
 
-## 修复代码格式
+### 二次开发
 
-``` bash
+使用如下命令修复代码问题及格式：
+
+```bash
 yarn lint
 ```
+
+如果您使用 VSCode 进行开发，请选择 ESLint（而不是 Prettier）为首选格式化工具。
