@@ -2,9 +2,7 @@
 
 ## 我的简历
 
-基于这个很棒的开源项目：[best resume ever](https://github.com/salomonelli/best-resume-ever)。
-
-基于 React 重新实现项目中我偏好的 Creative 模板。
+基于开源项目 [best resume ever](https://github.com/salomonelli/best-resume-ever)，使用 React + Next.js 重新实现其中我喜欢的 [Creative](https://salomonelli.github.io/best-resume-ever/#/resume/creative) 模板。
 
 ## 你的简历
 
@@ -20,7 +18,7 @@ yarn
 
 ### 预览简历
 
-使用如下命令在本机即时预览生成简历的结果：
+在本机即时预览简历：
 
 ```bash
 yarn serve
@@ -57,18 +55,30 @@ experience:
 
 ### 导出简历
 
-使用如下命令导出简历为 PDF 和 JPEG 格式的文件，可以在 `/exports` 目录下找到导出的结果：
+导出简历为 PDF 和 JPEG 格式的文件：
 
 ```bash
 yarn export
 ```
 
+可以在 `/exports` 目录下找到导出的结果。
+
+### 构建打包
+
+构建供生产环境使用：
+
+```bash
+yarn build
+```
+
+构建的结果存放在 `/dist` 目录下。
+
 ### 二次开发
 
-使用如下命令修复代码问题及格式：
+修复代码质量与格式问题：
 
 ```bash
 yarn lint
 ```
 
-如果您使用 VSCode 进行开发，请选择 ESLint（而不是 Prettier）为首选格式化工具。
+在开发时，请选择 ESLint（而不是 Prettier）为首选格式化工具。
