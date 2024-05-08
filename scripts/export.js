@@ -130,6 +130,7 @@ const exportResumes = async function () {
         path: `${savePath}${filename}.pdf`,
         width: pdfWidth,
         height: pdfHeight,
+        printBackground: true,
       });
 
       console.log(`Resume PDF is exported to: ${savePath}${filename}.pdf`);

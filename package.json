@@ -1,7 +1,6 @@
 {
   "name": "best-resume-ever-creative-react",
   "version": "1.0.0",
-  "type": "module",
   "private": true,
   "author": {
     "name": "LolipopJ",
@@ -12,6 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prettier": "prettier --write **/* --ignore-path .gitignore --ignore-unknown",
     "export": "concurrently \"npm run serve\" \"node scripts/export.js\" --success first --kill-others"
   },
   "dependencies": {
