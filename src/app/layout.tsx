@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { type Metadata } from "next";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
 import GlobalContext from "@/contexts/global";
@@ -21,7 +21,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -46,7 +45,7 @@ export default function RootLayout({
     const nextQueryString = nextSearchParamsString
       ? `?${nextSearchParamsString}`
       : "";
-    router.replace(`${pathname}${nextQueryString}`);
+    window.history.replaceState(null, "", `${pathname}${nextQueryString}`);
   };
 
   const triggerSwitchLang = () => {
