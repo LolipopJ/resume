@@ -1,10 +1,10 @@
 {
-  "name": "best-resume-ever-creative-react",
+  "name": "resume",
   "version": "1.0.0",
   "private": true,
   "author": {
     "name": "LolipopJ",
-    "email": "lolipop0703@qq.com"
+    "email": "mail@towind.fun"
   },
   "scripts": {
     "serve": "next dev",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.17.1",
-    "@types/node": "^20.12.10",
+    "@types/node": "^20.12.11",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
