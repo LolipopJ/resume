@@ -48,6 +48,7 @@ export default function Resume() {
       url,
       defaultHidden = false,
     } = options;
+
     return (
       <a
         key={key}
@@ -59,7 +60,7 @@ export default function Resume() {
         {...(!!url ? { href: url, target: "_blank" } : {})}
       >
         <div className="resume-section-item__title">
-          <span>{title}</span>
+          <span className="resume-section-item__title-text">{title}</span>
           {!!badge ? (
             <span
               className={classNames({

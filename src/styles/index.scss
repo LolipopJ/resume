@@ -34,6 +34,9 @@
     &__title {
       @apply flex flex-row items-center text-lg font-bold;
 
+      &-text {
+      }
+
       &-badge {
         @apply ml-1.5 px-1.5 py-1 text-xs rounded-md bg-zinc-200 text-zinc-900;
 

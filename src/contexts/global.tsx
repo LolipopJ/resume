@@ -12,7 +12,7 @@ export interface IGlobalContext {
 }
 
 export const GlobalContext = createContext<IGlobalContext>({
-  lang: Lang.EN,
+  lang: Lang.ZH,
   switchLang: () => {},
   mode: ResumePreviewMode.DEFAULT,
   switchMode: () => {},

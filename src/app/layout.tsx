@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   const searchParams = useSearchParams();
 
-  const lang = (searchParams.get("lang") || Lang.EN) as Lang;
+  const lang = (searchParams.get("lang") || Lang.ZH) as Lang;
   const mode = (searchParams.get("mode") ||
     ResumePreviewMode.DEFAULT) as ResumePreviewMode;
   const theme = searchParams.get("theme") as ColorTheme | undefined;

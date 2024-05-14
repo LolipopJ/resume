@@ -22,17 +22,17 @@
     {
       "company": "Alibaba",
       "position": "Front-end Development / Delivery Engineer",
-      "description": "Alibaba Cloud - System Engineering Technology. Undertake the research and development of Yunqiao platform internally, and participate in the delivery performance of projects such as China Nuclear Power Unified R&D Platform and Guiyang Airport Qianyunyigou"
+      "description": "Alibaba Cloud - System Engineering Technology. Undertake the development of Yunqiao platform internally, and participate in the delivery performance of projects such as China Nuclear Power Unified R&D Platform and Guiyang Airport Qianyunyigou"
     },
     {
       "company": "Alibaba",
       "position": "Front-end Development Engineer",
-      "description": "Alibaba Cloud - Global Technical Service. Undertake the research and development of GTS workbench"
+      "description": "Alibaba Cloud - Global Technical Service. Undertake the development of GTS workbench"
     },
     {
       "company": "Huawei",
-      "position": "Cloud Computing Development Engineer",
-      "description": "Storage Business Infrastructure - Container Platform. Responsible for refactoring and developing CDBI, building and deploying multiple independent verification environments, writing scripts, and writing several blogs; awarded as Star of Huawei Storage (top 20%)"
+      "position": "Cloud Computing Engineer",
+      "description": "Storage Business Infrastructure - Container Platform. Responsible for refactoring and developing CDBI. Build and deploy independent verification environments, write scripts and several blogs. Awarded as Star of Huawei Storage (top 20%)"
     }
   ],
   "projects": [
@@ -50,11 +50,11 @@
     },
     {
       "shortIntro": "Online repair system for dormitory network of UESTC",
-      "description": "Internet users can submit repair orders online and track the progress of them. Solvers can accept orders, add processing information, and view order operation logs. Full stack"
+      "description": "Network users can submit repair orders online and track the progress. Solvers can accept orders, add processing information, and view order progress logs. Full stack"
     },
     {
       "shortIntro": "Official website for LUG, UESTC",
-      "description": "Use Markdown to write news and blogs, provide navigation links to various services, and better show the elegant demeanor of the LUG team. The design refers to the official website of Tsinghua University TUNA Association. Full stack"
+      "description": "Use Markdown to write news and blogs, provide navigation links to various services, and better show the elegant demeanor of the LUG. The design refers to the official website of Tsinghua University TUNA Association. Full stack"
     },
     {
       "shortIntro": "Client for Home Action",
@@ -68,7 +68,7 @@
   "contributions": [
     {
       "shortIntro": "Convert Markdown to image",
-      "description": "Allows custom templates to convert input Markdown or HTML documents into images that suit your needs"
+      "description": "Allows custom templates to convert input Markdown or HTML into images that suit your needs"
     },
     {
       "shortIntro": "A modern Hexo blog theme",
@@ -76,7 +76,7 @@
     },
     {
       "shortIntro": "「Design Pattern Tutorial for Chinese Readers」",
-      "description": "The Chinese translation version of the open source tutorial design-patterns-for-humans, for reference in learning design patterns"
+      "description": "The Chinese translation of the open source tutorial Design Patterns For Humans, for reference in learning design patterns"
     },
     {
       "shortIntro": "Official website for 2020 Students Open Source Conference of Chinese",
@@ -94,7 +94,7 @@
     },
     {
       "name": "2021 中国大学生服务外包创新创业大赛",
-      "award": "Third Prize of Western Regional Competition",
+      "award": "Third Prize in Western Division",
       "grade": "Provincial level"
     },
     {
