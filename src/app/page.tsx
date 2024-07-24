@@ -126,15 +126,14 @@ export default function Resume() {
               <a
                 className="contact-item"
                 href={`mailto:${resume.contact.email}`}
-                target="_blank"
               >
                 <i className="fa-solid fa-envelope" />
                 <span>{resume.contact.email}</span>
               </a>
-              <div className="contact-item">
+              <a className="contact-item" href={`tel:${resume.contact.phone}`}>
                 <i className="fa-solid fa-phone-flip" />
                 <span>{resume.contact.phone}</span>
-              </div>
+              </a>
               <a
                 className="contact-item"
                 href={resume.contact.website}
@@ -151,6 +150,10 @@ export default function Resume() {
                 <i className="fa-brands fa-github" />
                 <span>{resume.contact.github}</span>
               </a>
+              <div className="contact-item">
+                <i className="fa-solid fa-cake-candles" />
+                <span>{resume.birthday}</span>
+              </div>
             </div>
 
             <div
