@@ -72,7 +72,7 @@
     {
       "name": "dupimg-finder",
       "url": "https://github.com/LolipopJ/dupimg-finder",
-      "platform": "Electron"
+      "platform": "React"
     },
     {
       "name": "design-patterns-for-humans-zh",

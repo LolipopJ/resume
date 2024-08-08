@@ -1,11 +1,14 @@
 const puppeteer = require("puppeteer");
+const { PDFDocument } = require("pdf-lib");
 const { request } = require("http");
 const path = require("path");
-const { existsSync, mkdirSync } = require("fs");
+const { existsSync, mkdirSync, readFileSync, writeFileSync } = require("fs");
 const { interval, lastValueFrom } = require("rxjs");
 const { filter, first, mergeMap } = require("rxjs/operators");
-
 const CONFIG = require("../configs/export-config.json");
+const resumeEn = require("../configs/resume-en.json");
+const resumeZh = require("../configs/resume-zh.json");
+
 const {
   DEV_PORT,
   EXPORT_SCREENSHOT_WIDTH,
@@ -20,6 +23,9 @@ const DEFAULT_SCREENSHOT_WIDTH = EXPORT_SCREENSHOT_WIDTH || 1600;
 const DEFAULT_SCREENSHOT_HEIGHT = EXPORT_SCREENSHOT_HEIGHT || 1000;
 const DEFAULT_PDF_WIDTH = EXPORT_PDF_WIDTH || 1600;
 const DEFAULT_PDF_HEIGHT = EXPORT_PDF_HEIGHT || 1000;
+
+const USER_FULL_NAME_EN = `${resumeEn.name.first} ${resumeEn.name.last}`;
+const USER_FULL_NAME_ZH = `${resumeZh.name.first}${resumeZh.name.last}`;
 
 const fetchServeResponse = () => {
   return new Promise((res, rej) => {
@@ -72,6 +78,7 @@ const exportResumes = async function () {
       autoFitPdf = true,
     }) {
       const filename = `resume-${code}`;
+      const fileFullName = `${savePath}${filename}`;
       const codeUpperCase = code.toUpperCase();
       const url = `http://localhost:${PORT}/?lang=${code}&theme=light&mode=export`;
       console.log(`Export resume: ${url} ...`);
@@ -98,9 +105,14 @@ const exportResumes = async function () {
       });
 
       await page.screenshot({
-        path: `${savePath}${filename}.jpeg`,
+        path: `${fileFullName}.jpeg`,
         fullPage: screenshotFullPage,
         quality: screenshotQuality,
+      });
+
+      await page.screenshot({
+        path: `${fileFullName}.png`,
+        fullPage: screenshotFullPage,
       });
 
       const pdfWidth =
@@ -122,18 +134,25 @@ const exportResumes = async function () {
           })
         : CONFIG[`EXPORT_PDF_HEIGHT_${codeUpperCase}`] || DEFAULT_PDF_HEIGHT;
 
-      console.log(
-        `Resume screenshot is exported to: ${savePath}${filename}.jpeg`,
-      );
+      console.log(`Resume screenshot is exported to: ${fileFullName}.jpeg`);
 
-      await page.pdf({
-        path: `${savePath}${filename}.pdf`,
+      const pdfBuffer = await page.pdf({
         width: pdfWidth,
         height: pdfHeight,
         printBackground: true,
       });
+      const pdfDoc = await PDFDocument.load(pdfBuffer, {
+        updateMetadata: false,
+      });
+      pdfDoc.setTitle(
+        code === "zh"
+          ? `简历 - ${USER_FULL_NAME_ZH}`
+          : `Resume - ${USER_FULL_NAME_EN}`,
+      );
+      pdfDoc.setAuthor(`${USER_FULL_NAME_EN} / ${USER_FULL_NAME_ZH}`);
+      writeFileSync(`${fileFullName}.pdf`, await pdfDoc.save());
 
-      console.log(`Resume PDF is exported to: ${savePath}${filename}.pdf`);
+      console.log(`Resume PDF is exported to: ${fileFullName}.pdf`);
 
       await browser.close();
     };
