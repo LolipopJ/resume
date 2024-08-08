@@ -71,12 +71,16 @@
       "description": "允许自定义模板，将输入的 Markdown 或 HTML 文档转换为符合心意的图片"
     },
     {
-      "shortIntro": "一款现代的 Hexo 博客主题",
-      "description": "开发新功能（例如夜间模式），完善移动端页面适配，修复已知的问题，帮助主题变得更好"
+      "shortIntro": "重复图像查找工具",
+      "description": "基于 EfficientIR 封装的 Electron 应用，支持查找重复图像对，搜索指定图像的相似结果"
     },
     {
-      "shortIntro": "「献给中文读者的设计模式教程」",
-      "description": "开源仓库 design-patterns-for-humans 的中文翻译版本，供学习设计模式相关内容参考使用"
+      "shortIntro": "献给人类的设计模式教程",
+      "description": "开源仓库 design-patterns-for-humans 的中文翻译版本，供学习设计模式时参考"
+    },
+    {
+      "shortIntro": "一款现代的 Hexo 博客主题",
+      "description": "开发新功能（例如夜间模式），完善移动端页面适配，修复已知的问题，帮助主题变得更好"
     },
     {
       "shortIntro": "2020 年中文学生开源年会主页",

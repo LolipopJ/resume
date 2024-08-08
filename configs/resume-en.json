@@ -71,12 +71,16 @@
       "description": "Allows custom templates to convert input Markdown or HTML into images that suit your needs"
     },
     {
-      "shortIntro": "A modern Hexo blog theme",
-      "description": "Develop new features (such as dark mode), improve mobile adaptation, fix known issues -- help the theme become better"
+      "shortIntro": "Duplicate Images Finder",
+      "description": "An Electron application based on the EfficientIR that supports finding duplicate image pairs and searching for similar results of a specified image"
     },
     {
-      "shortIntro": "「Design Pattern Tutorial for Chinese Readers」",
+      "shortIntro": "Design Pattern Tutorial for Humans",
       "description": "The Chinese translation of the open source tutorial Design Patterns For Humans, for reference in learning design patterns"
+    },
+    {
+      "shortIntro": "A modern Hexo blog theme",
+      "description": "Develop new features (such as dark mode), improve mobile adaptation, fix known issues -- help the theme become better"
     },
     {
       "shortIntro": "Official website for 2020 Students Open Source Conference of Chinese",

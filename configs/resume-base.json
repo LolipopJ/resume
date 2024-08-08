@@ -70,13 +70,18 @@
       "platform": "TypeScript"
     },
     {
-      "name": "hexo-theme-archer",
-      "url": "https://github.com/fi3ework/hexo-theme-archer",
-      "platform": "EJS"
+      "name": "dupimg-finder",
+      "url": "https://github.com/LolipopJ/dupimg-finder",
+      "platform": "Electron"
     },
     {
       "name": "design-patterns-for-humans-zh",
       "url": "https://github.com/LolipopJ/design-patterns-for-humans-zh"
+    },
+    {
+      "name": "hexo-theme-archer",
+      "url": "https://github.com/fi3ework/hexo-theme-archer",
+      "platform": "JavaScript"
     },
     {
       "name": "SOSCONF2020",
