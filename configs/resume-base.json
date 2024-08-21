@@ -119,12 +119,6 @@
       "url": "https://www.typescriptlang.org"
     },
     {
-      "name": "Vue",
-      "level": 70,
-      "iconClass": "fa-brands fa-vuejs",
-      "url": "https://vuejs.org"
-    },
-    {
       "name": "Node",
       "level": 60,
       "iconClass": "fa-brands fa-node-js",
