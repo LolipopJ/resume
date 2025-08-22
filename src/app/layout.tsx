@@ -84,15 +84,15 @@ export default function RootLayout({
       {/* #region 引入 Font Awesome 6: https://fa6.dashgame.com/ */}
       <Script
         defer
-        src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/solid.min.js"
+        src="https://unpkg.com/@fortawesome/fontawesome-free@6/js/solid.min.js"
       ></Script>
       <Script
         defer
-        src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/brands.min.js"
+        src="https://unpkg.com/@fortawesome/fontawesome-free@6/js/brands.min.js"
       ></Script>
       <Script
         defer
-        src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/fontawesome.min.js"
+        src="https://unpkg.com/@fortawesome/fontawesome-free@6/js/fontawesome.min.js"
       ></Script>
       {/* #endregion */}
     </html>

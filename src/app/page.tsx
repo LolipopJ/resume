@@ -48,16 +48,17 @@ export default function Resume() {
       url,
       defaultHidden = false,
     } = options;
+    const isExternalLink = !!url && url.startsWith("http");
 
     return (
       <a
         key={key}
         className={classNames({
           "resume-section-item": true,
-          "resume-section-item--clickable": !!url,
+          "resume-section-item--clickable": isExternalLink,
           "resume-section-item--hidden": defaultHidden && !showAllItems,
         })}
-        {...(!!url ? { href: url, target: "_blank" } : {})}
+        {...(isExternalLink ? { href: url, target: "_blank" } : {})}
       >
         <div className="resume-section-item__title">
           <span className="resume-section-item__title-text">{title}</span>
