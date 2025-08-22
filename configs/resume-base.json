@@ -9,13 +9,13 @@
   },
   "experience": [
     {
-      "website": "https://www.alibabagroup.com",
+      "website": "https://www.aliyun.com",
       "timeperiod": "2022.07 — 2023.12",
       "internship": false
     },
     {
       "timeperiod": "2022.02 — 2022.04",
-      "website": "https://www.alibabagroup.com",
+      "website": "https://www.aliyun.com",
       "internship": true
     },
     {
@@ -37,6 +37,11 @@
       "url": "https://gts.work/portal/yunqiao"
     },
     {
+      "name": "qianyunyigou-weapp",
+      "platform": "Weapp",
+      "url": "#小程序://黔云易购/fXsLIa1FZaiyCzC"
+    },
+    {
       "name": "startrails-dag-editor",
       "platform": "React"
     },
@@ -53,12 +58,13 @@
     {
       "name": "lug-official",
       "platform": "Vue",
-      "url": "https://github.com/uestclug/lug-official"
+      "url": "https://github.com/uestclug/lug-official",
+      "hidden": true
     },
     { "name": "home-action-client", "platform": "Vue", "hidden": true },
     {
       "name": "wxapp-ivory-tower-timetable",
-      "platform": "WXML",
+      "platform": "Weapp",
       "url": "https://github.com/UESTC-cantdoit/wxapp-ivory-tower-timetable",
       "hidden": true
     }
@@ -67,12 +73,12 @@
     {
       "name": "mdimg",
       "url": "https://github.com/LolipopJ/mdimg",
-      "platform": "TypeScript"
+      "platform": "Node"
     },
     {
       "name": "dupimg-finder",
       "url": "https://github.com/LolipopJ/dupimg-finder",
-      "platform": "React"
+      "platform": "Electron"
     },
     {
       "name": "design-patterns-for-humans-zh",
@@ -109,20 +115,26 @@
   "skills": [
     {
       "name": "React",
-      "level": 85,
+      "level": 90,
       "iconClass": "fa-brands fa-react",
-      "url": "https://reactjs.org"
+      "url": "https://www.reactjs.org"
+    },
+    {
+      "name": "Vue",
+      "level": 80,
+      "iconClass": "fa-brands fa-vuejs",
+      "url": "https://www.vuejs.org"
     },
     {
       "name": "TypeScript",
-      "level": 75,
+      "level": 70,
       "url": "https://www.typescriptlang.org"
     },
     {
       "name": "Node",
       "level": 60,
       "iconClass": "fa-brands fa-node-js",
-      "url": "https://nodejs.org"
+      "url": "https://www.nodejs.org"
     }
   ]
 }

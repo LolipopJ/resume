@@ -41,23 +41,27 @@
       "description": "As the front-end owner, responsible for the development and maintenance of Yunqiao Workshop and Yunqiao Asset Market, and participate in the baseline development and customized development of commercial versions. Improve the experience and optimize the performance of the Domain-Driven Design diagram editor in the platform. Front-end"
     },
     {
-      "shortIntro": "Lightweight task scheduling tool",
+      "shortIntro": "Qianyunyigou",
+      "description": "Guiyang Airport delivery project, a promotional activity implementation platform for collaboration between automotive and beverage companies. As the front-end lead, completed the development, integration, and launch of the mini-program, and participated in the regular iterations and maintenance of the mini-program. Front-end."
+    },
+    {
+      "shortIntro": "Startrails Lightweight Task Scheduling Tool",
       "description": "Implemented based on AntV X6, which arranges server-side task execution logic in a drag-and-drop manner. Supports the use of multiple running logics such as serial and parallel, supports the configuration of different task nodes such as Shell and Python, and supports legality check and automatic arrangement of nodes. Front-end"
     },
     {
-      "shortIntro": "Alibaba Damo Academy official website",
+      "shortIntro": "Alibaba Damo Academy Official",
       "description": "Participate in the official website upgrade project of Alibaba Damo Academy and Yunqiao, responsible for the transformation and development of the login registration module and personal account management module. Front-end"
     },
     {
-      "shortIntro": "Online repair system for dormitory network of UESTC",
+      "shortIntro": "Online Repair System for Dormitory Network of UESTC",
       "description": "Network users can submit repair orders online and track the progress. Solvers can accept orders, add processing information, and view order progress logs. Full stack"
     },
     {
-      "shortIntro": "Official website for LUG, UESTC",
+      "shortIntro": "Lug Official, UESTC",
       "description": "Use Markdown to write news and blogs, provide navigation links to various services, and better show the elegant demeanor of the LUG. The design refers to the official website of Tsinghua University TUNA Association. Full stack"
     },
     {
-      "shortIntro": "Client for Home Action",
+      "shortIntro": "Home Action Client",
       "description": "A client designed for the families of lost elderly people and volunteers looking for the lost. Use Lark for information synchronization and intelligence aggregation. Front-end"
     },
     {
@@ -92,17 +96,17 @@
       "name": "Alibaba Cloud Certified Professional - Cloud Computing"
     },
     {
-      "name": "2021 中国高校计算机大赛网络技术挑战赛",
+      "name": "2021 C4 - Network Technology Challenge",
       "award": "First Prize in Southwest Division",
       "grade": "Provincial level"
     },
     {
-      "name": "2021 中国大学生服务外包创新创业大赛",
+      "name": "2021 Competition of Service Outsourcing and Entrepreneurship Innovation",
       "award": "Third Prize in Western Division",
       "grade": "Provincial level"
     },
     {
-      "name": "2020 中国高校计算机大赛微信小程序应用开发赛",
+      "name": "2020 C4 - WeChat Mini Program Application Development Competition",
       "award": "Third Prize in Southwest Division",
       "grade": "Provincial level"
     },
