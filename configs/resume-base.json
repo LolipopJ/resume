@@ -42,6 +42,11 @@
       "url": "#小程序://黔云易购/fXsLIa1FZaiyCzC"
     },
     {
+      "name": "scysej-client-weapp",
+      "platform": "React",
+      "url": "https://www.scysej.com/"
+    },
+    {
       "name": "startrails-dag-editor",
       "platform": "React"
     },
@@ -53,7 +58,8 @@
     {
       "name": "netunion-dnrs-web",
       "platform": "Vue",
-      "url": "https://github.com/uestclug/netunion-dnrs-web"
+      "url": "https://github.com/uestclug/netunion-dnrs-web",
+      "hidden": true
     },
     {
       "name": "lug-official",
@@ -71,6 +77,16 @@
   ],
   "contributions": [
     {
+      "name": "hexo-theme-archer",
+      "url": "https://github.com/fi3ework/hexo-theme-archer",
+      "platform": "JavaScript"
+    },
+    {
+      "name": "gitalk-react",
+      "url": "https://github.com/LolipopJ/gitalk-react",
+      "platform": "React"
+    },
+    {
       "name": "mdimg",
       "url": "https://github.com/LolipopJ/mdimg",
       "platform": "Node"
@@ -85,14 +101,10 @@
       "url": "https://github.com/LolipopJ/design-patterns-for-humans-zh"
     },
     {
-      "name": "hexo-theme-archer",
-      "url": "https://github.com/fi3ework/hexo-theme-archer",
-      "platform": "JavaScript"
-    },
-    {
       "name": "SOSCONF2020",
       "url": "https://gitlab.com/uestclug/sosconf_zh.gitlab.io",
-      "platform": "Vue"
+      "platform": "Vue",
+      "hidden": true
     }
   ],
   "awards": [
