@@ -81,18 +81,18 @@ export default function RootLayout({
           {children}
         </GlobalContext.Provider>
       </body>
-      {/* #region 引入 Font Awesome 6: https://fa6.dashgame.com/ */}
+      {/* #region 引入 Font Awesome 7: https://fontawesome.com/ */}
       <Script
         defer
-        src="https://unpkg.com/@fortawesome/fontawesome-free@6/js/solid.min.js"
+        src="https://unpkg.com/@fortawesome/fontawesome-free@7/js/solid.min.js"
       ></Script>
       <Script
         defer
-        src="https://unpkg.com/@fortawesome/fontawesome-free@6/js/brands.min.js"
+        src="https://unpkg.com/@fortawesome/fontawesome-free@7/js/brands.min.js"
       ></Script>
       <Script
         defer
-        src="https://unpkg.com/@fortawesome/fontawesome-free@6/js/fontawesome.min.js"
+        src="https://unpkg.com/@fortawesome/fontawesome-free@7/js/fontawesome.min.js"
       ></Script>
       {/* #endregion */}
     </html>

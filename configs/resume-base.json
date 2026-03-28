@@ -44,7 +44,7 @@
     {
       "name": "scysej-client-weapp",
       "platform": "React",
-      "url": "https://www.scysej.com/"
+      "url": "https://www.scysej.com"
     },
     {
       "name": "startrails-dag-editor",
@@ -126,27 +126,39 @@
   ],
   "skills": [
     {
+      "name": "Copilot",
+      "iconClass": "fa-brands fa-openai",
+      "url": "https://github.com/copilot"
+    },
+    {
       "name": "React",
-      "level": 90,
       "iconClass": "fa-brands fa-react",
       "url": "https://www.reactjs.org"
     },
     {
       "name": "Vue",
-      "level": 80,
       "iconClass": "fa-brands fa-vuejs",
       "url": "https://www.vuejs.org"
     },
     {
       "name": "TypeScript",
-      "level": 70,
+      "iconClass": "fa-brands fa-typescript",
       "url": "https://www.typescriptlang.org"
     },
     {
       "name": "Node",
-      "level": 60,
       "iconClass": "fa-brands fa-node-js",
       "url": "https://www.nodejs.org"
+    },
+    {
+      "name": "Tailwind CSS",
+      "iconClass": "fa-brands fa-tailwind-css",
+      "url": "https://tailwindcss.com"
+    },
+    {
+      "name": "Sass",
+      "iconClass": "fa-brands fa-sass",
+      "url": "https://sass-lang.com"
     }
   ]
 }

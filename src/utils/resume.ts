@@ -49,7 +49,7 @@ export interface ResumeDetails {
   }[];
   skills: {
     name: string;
-    level: number;
+    level?: number;
     iconClass: string;
     url: string;
   }[];
