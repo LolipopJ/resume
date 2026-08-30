@@ -4,7 +4,7 @@
   "private": true,
   "author": {
     "name": "LolipopJ",
-    "email": "mail@towind.fun"
+    "email": "mail@towind.cn"
   },
   "scripts": {
     "serve": "next dev",
