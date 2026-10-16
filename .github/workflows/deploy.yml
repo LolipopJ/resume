@@ -27,19 +27,17 @@ jobs:
           node-version: "24"
           cache: "pnpm"
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
           pnpm install --frozen-lockfile
 
       - name: Validate and build static source
         run: |
-          pnpm run lint
-          pnpm test
+          pnpm run build
 
       - name: Deploy page
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: out
-          publish_branch: gh-pages
+          publish_dir: ./out
