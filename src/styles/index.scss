@@ -1,6 +1,6 @@
 .contact-item,
 .action-item {
-  > svg {
+  > i {
     @apply mr-2 w-4;
   }
 }
@@ -15,7 +15,7 @@
   &__title {
     @apply text-primary dark:text-primary-light text-xl font-bold;
 
-    > svg {
+    > i {
       @apply mr-3 w-6;
     }
   }
@@ -73,8 +73,8 @@
       @apply flex flex-row flex-wrap mt-3 pl-9;
     }
 
-    > svg {
-      @apply mr-1 w-4;
+    > i {
+      @apply mr-2 w-4;
     }
   }
 }

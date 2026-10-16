@@ -2,12 +2,14 @@ const puppeteer = require("puppeteer");
 const { PDFDocument } = require("pdf-lib");
 const { request } = require("http");
 const path = require("path");
-const { existsSync, mkdirSync, readFileSync, writeFileSync } = require("fs");
+const { existsSync, mkdirSync, writeFileSync } = require("fs");
 const { interval, lastValueFrom } = require("rxjs");
 const { filter, first, mergeMap } = require("rxjs/operators");
 const CONFIG = require("../configs/export-config.json");
-const resumeEn = require("../configs/resume-en.json");
-const resumeZh = require("../configs/resume-zh.json");
+const { localize } = require("../src/utils/localize");
+const resume = require("../configs/resume.json");
+const resumeEn = localize(resume, "en");
+const resumeZh = localize(resume, "zh");
 
 const {
   DEV_PORT,

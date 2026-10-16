@@ -18,19 +18,12 @@ if (isGithubActions) {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  distDir: "dist",
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
-  },
-  typescript: {
-    ignoreBuildErrors: true,
   },
   images: { unoptimized: true },
   assetPrefix,
   basePath,
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
 };
 
 export default nextConfig;

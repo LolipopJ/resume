@@ -12,28 +12,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 12
+
       - name: Use Node.js 24.x
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
-          cache: "yarn"
+          cache: "pnpm"
 
       - name: Install Dependencies
         run: |
-          yarn
+          pnpm install --frozen-lockfile
 
-      - name: Build static source
+      - name: Validate and build static source
         run: |
-          yarn build
+          pnpm run lint
+          pnpm test
 
       - name: Deploy page
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: dist
+          publish_dir: out
           publish_branch: gh-pages

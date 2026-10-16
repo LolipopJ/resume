@@ -169,17 +169,10 @@ export default function Resume() {
                 className="action-item"
                 onClick={globalContext.switchColorTheme}
               >
-                <i
-                  className={classNames(
-                    "fa-solid",
-                    globalContext.isDarkMode ? "fa-sun" : "fa-moon",
-                  )}
-                />
-                <span>
-                  {globalContext.isDarkMode
-                    ? common.lightMode
-                    : common.darkMode}
-                </span>
+                <i className="fa-solid fa-moon dark:hidden" />
+                <i className="fa-solid fa-sun hidden dark:inline-block" />
+                <span className="dark:hidden">{common.darkMode}</span>
+                <span className="hidden dark:inline">{common.lightMode}</span>
               </a>
               <a className="action-item" onClick={globalContext.switchLang}>
                 <i className="fa-solid fa-language" />
