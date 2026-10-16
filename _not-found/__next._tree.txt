@@ -1,0 +1,4 @@
+:HL["/resume/_next/static/chunks/0086qvzh38xyy.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"h6rU50A6cKDgt6q7jjdkK","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
